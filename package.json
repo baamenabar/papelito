@@ -1,0 +1,43 @@
+{
+  "name": "papelito",
+  "version": "0.1.0",
+  "description": "Draw a piece of paper with your penitence for an offense or as good will gesture.",
+  "main": "index.js",
+  "scripts": {
+    "jest": "jest",
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baamenabar/papelito.git"
+  },
+  "keywords": [
+    "nodejs",
+    "htmx",
+    "monolyth"
+  ],
+  "author": "B. Agustín Amenabar L.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/baamenabar/papelito/issues"
+  },
+  "homepage": "https://github.com/baamenabar/papelito#readme",
+  "dependencies": {
+    "csurf": "^1.10.0",
+    "express": "^5.0.1",
+    "express-rate-limit": "^7.4.1",
+    "handlebars": "^4.7.8",
+    "helmet": "^8.0.0",
+    "mysql-migrations": "^1.0.7",
+    "mysql2": "^3.11.4",
+    "pino": "^9.5.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "chai": "^5.1.2",
+    "jest": "^29.7.0",
+    "sinon": "^19.0.2",
+    "supertest": "^7.0.0"
+  }
+}
