@@ -7,9 +7,7 @@ COPY package*.json ./
 RUN npm install
 
 # Create a user and group with the same UID/GID as your host user
-# (replace 1000 with your actual UID/GID)
-RUN groupadd -g 1000 appuser && \
-    useradd -u 1000 -g appuser -m appuser
+RUN useradd -ms /bin/bash appuser -G staff
 
 # Switch to the appuser user
 USER appuser
@@ -18,4 +16,4 @@ USER appuser
 EXPOSE 3000
 
 # The entrypoint script will handle starting your application
-ENTRYPOINT ["/entrypoint.sh"]
+# ENTRYPOINT ["/entrypoint.sh"]
